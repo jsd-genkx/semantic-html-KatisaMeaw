@@ -4,46 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe Resume</title>
-    <style>
-        body {font-family:verdana;}
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body style="background-color:rgb(20, 29, 43);">
-    <header>
-        <h1>John Doe</h1>
-        <hr>
-        <p>Web Developer</p>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>John</span>Doe</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Resume</a>
+            <a href="#">Services</a>
+            <a href="#">Experience</a>
+            <a href="#">Projects</a>
+            <a href="#">Education</a>
+        </nav>
+
+        <a href="#" class="contact">Contact Me</a>
     </header>
 
-    <main>
-        <h2>About me</h2>
-        <img src="https://introduction-to-web-application.vercel.app/profile.jpg"
-        alt="photo of John Doe" width="200" height="200>">
-        <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript.</p>
-            <br>
-            <h2>Experience</h2>  <hr>
-            <h3>Web Developer</h3>
-            <p>XYZ Company - June 2020 to Present</p>
-                <ul>
-                <li>responsive websites using HTML, CSS, and JavaScript.</li>
-                <li>Collaborated with team members to implement new features and improve existing ones.</li>
-                </ul>
-        <br>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
 
-            <h2>Education</h2>
-        <hr>
-            <h3>Bachelor of Science in Chemistry</h3>
-            <p>ABC University - Graduated in 2019</p><br>
-            <h2>Contact Me</h2><hr>
-            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a><br>
-            Phone: <a href="tel:+1234567890">+1234567890</a><br>
-            LinkedIn: johndoe <a href="https://www.linkedin.com/in/johndoe" target="_blank">https://www.linkedin.com/in/johndoe</a></p>
-        <br>
-    </main>
+            <h1>I'm <span>John<br></span>a Web Developer</h1>
 
-    <footer>
-      <p>&copy; 2025 John Doe Resume. All rights reserved.</p>
+            <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Experience</button>
+            </div>
+        </div>
+
+        <div class="img-box">
+            <img src="profile.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about">
+
+        <div class="about-img">
+            <img src="profile.jpg" alt="">
+        </div>
+
+         <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Web<span>Developer</span></h3>
+            <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript.</p>
+
+            <a href="#" class="btn-2">Experience</a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="contact-me">Contact<span>Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="social">
+            <a href="="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="="#"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="="#"><i class='bx bxl-instagram-alt' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright">2025 John Doe | All Rights Reserved</p>
+
     </footer>
 
-    </body>
+
+</body>
 </html>
